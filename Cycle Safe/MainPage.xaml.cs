@@ -22,6 +22,8 @@ namespace Cycle_Safe
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public object NavigationService { get; private set; }
+
         public MainPage()
         {
             this.InitializeComponent();
