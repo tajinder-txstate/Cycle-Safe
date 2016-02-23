@@ -20,7 +20,7 @@
         <TextBlock x:Name="LoginText_Copy1" HorizontalAlignment="Center" Margin="189,486,68,0" TextWrapping="Wrap" Text="Forgot Password" VerticalAlignment="Top" FontSize="24" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" Foreground="White" SelectionChanged="LoginText_SelectionChanged" Height="26" Width="103" />
         <Button x:Name="Login_Button" Content="" HorizontalAlignment="Center" Margin="63,397,63,0" VerticalAlignment="Top" Height="37" Width="234" Foreground="{x:Null}"/>
         <Button x:Name="Guest_Button" Content="" HorizontalAlignment="Center" Margin="63,440,63,0" VerticalAlignment="Top" Height="37" Width="234" Foreground="{x:Null}"/>
-        <Button x:Name="Register_Button" Content="" HorizontalAlignment="Center" Margin="63,483,184,0" VerticalAlignment="Top" Height="37" Width="113" Foreground="{x:Null}"/>
+        <Button x:Name="Register_Button" Content="" HorizontalAlignment="Center" Margin="63,483,184,0" VerticalAlignment="Top" Height="37" Width="113" Foreground="{x:Null}" ClickMode="Press" Click="Register_Button_Click"/>
         <Button x:Name="Password_Button" Content="" HorizontalAlignment="Center" Margin="184,483,63,0" VerticalAlignment="Top" Height="37" Width="113" Foreground="{x:Null}"/>
 
     </Grid>

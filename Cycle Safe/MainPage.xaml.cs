@@ -29,6 +29,11 @@ namespace Cycle_Safe
             this.InitializeComponent();
         }
 
+        private void Register_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Register));
+        }
+
         private void AppName_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
