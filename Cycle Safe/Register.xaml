@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Cycle_Safe.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cycle_Safe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF45A860">
+        <TextBlock x:Name="Register_Text" HorizontalAlignment="Center" Margin="108,10,107,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" FontSize="66.667" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" Foreground="White" Height="75" Width="145" />
+        <TextBox x:Name="Name_TextBox" HorizontalAlignment="Center" Margin="37,105,36,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontSize="25" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" InputScope="" PlaceholderText="" TextAlignment="Center" Width="287" Background="#FF2B2B2B" BorderBrush="{x:Null}" SelectionHighlightColor="{x:Null}" Foreground="{x:Null}"/>
+        <TextBox x:Name="Email_TextBox" HorizontalAlignment="Center" Margin="37,162,36,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontSize="25" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" InputScope="" PlaceholderText="" TextAlignment="Center" Width="287" Background="#FF2B2B2B" BorderBrush="{x:Null}" SelectionHighlightColor="{x:Null}" Foreground="{x:Null}"/>
+        <TextBox x:Name="Phone_TextBox" HorizontalAlignment="Center" Margin="37,217,36,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontSize="25" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" InputScope="" PlaceholderText="" TextAlignment="Center" Width="287" Background="#FF2B2B2B" BorderBrush="{x:Null}" SelectionHighlightColor="{x:Null}" Foreground="{x:Null}"/>
+        <TextBox x:Name="UserName_TextBox" HorizontalAlignment="Center" Margin="37,272,36,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="25" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" InputScope="" PlaceholderText="" TextAlignment="Center" Width="287" Background="#FF2B2B2B" BorderBrush="{x:Null}" SelectionHighlightColor="{x:Null}" Foreground="{x:Null}"/>
+        <TextBox x:Name="Password_TextBox" HorizontalAlignment="Center" Margin="37,327,36,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="25" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" InputScope="" PlaceholderText="" TextAlignment="Center" Width="287" Background="#FF2B2B2B" BorderBrush="{x:Null}" SelectionHighlightColor="{x:Null}" Foreground="{x:Null}"/>
+        <TextBox x:Name="Verify_TextBox" HorizontalAlignment="Center" Margin="37,384,36,0" TextWrapping="Wrap" Text="Verify Password" VerticalAlignment="Top" FontSize="25" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" InputScope="" PlaceholderText="" TextAlignment="Center" Width="287" ManipulationStarted="Name_TextBox_Click" Background="#FF363636" BorderBrush="{x:Null}" SelectionHighlightColor="#FF298FCC" Foreground="{x:Null}" RequestedTheme="Dark"/>
+        <Rectangle HorizontalAlignment="Left" Height="40" Margin="108,515,0,0" VerticalAlignment="Top" Width="145" Fill="#FF363636"/>
+        <TextBlock x:Name="Register_Block" HorizontalAlignment="Center" Margin="141,511,141,0" TextWrapping="Wrap" Text="Register" FontSize="35" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" Foreground="White" Width="78"/>
+        <Button x:Name="Register_Button" HorizontalAlignment="Center" Height="40" Margin="0,515,0,0" VerticalAlignment="Top" Width="145"/>
+
+    </Grid>
+</Page>
