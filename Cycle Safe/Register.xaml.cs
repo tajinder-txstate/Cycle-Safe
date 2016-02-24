@@ -23,7 +23,6 @@ namespace Cycle_Safe
     /// </summary>
     public sealed partial class Register : Page
     {
-        int counter = 0;
 
         public Register()
         {
@@ -32,67 +31,38 @@ namespace Cycle_Safe
 
         private void Name_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-
-            if(counter == 0)
-            {
-                counter++;
+            if(Name_TextBox.Text == "Name")
                 Name_TextBox.Text = string.Empty;
-            }
         }
 
         private void Email_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            int counter = 0;
-
-            if (counter == 0)
-            {
-                counter++;
+            if (Email_TextBox.Text == "Email")
                 Email_TextBox.Text = string.Empty;
-            }
         }
 
         private void Phone_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            int counter = 0;
-
-            if (counter == 0)
-            {
-                counter++;
+            if(Phone_TextBox.Text == "Phone Number")
                 Phone_TextBox.Text = string.Empty;
-            }
         }
 
         private void UserName_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            int counter = 0;
-
-            if (counter == 0)
-            {
-                counter++;
+            if(UserName_TextBox.Text == "Username")
                 UserName_TextBox.Text = string.Empty;
-            }
         }
 
         private void Password_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            int counter = 0;
-
-            if (counter == 0)
-            {
-                counter++;
+            if(Password_TextBox.Text == "Password")
                 Password_TextBox.Text = string.Empty;
-            }
         }
 
         private void Verify_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            int counter = 0;
-
-            if (counter == 0)
-            {
-                counter++;
+            if(Verify_TextBox.Text == "Verify Password")
                 Verify_TextBox.Text = string.Empty;
-            }
         }
 
         private void Name_LostFocus(object sender, RoutedEventArgs e)
@@ -119,7 +89,7 @@ namespace Cycle_Safe
         private void UserName_LostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(UserName_TextBox.Text))
-                UserName_TextBox.Text = "UserName";
+                UserName_TextBox.Text = "Username";
             username = UserName_TextBox.Text;
         }
 
