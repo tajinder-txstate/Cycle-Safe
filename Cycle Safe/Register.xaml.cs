@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using static Cycle_Safe.Globalclass;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -22,9 +23,128 @@ namespace Cycle_Safe
     /// </summary>
     public sealed partial class Register : Page
     {
+        int counter = 0;
+
         public Register()
         {
             this.InitializeComponent();
+        }
+
+        private void Name_TextBox_Click(object sender, PointerRoutedEventArgs e)
+        {
+
+            if(counter == 0)
+            {
+                counter++;
+                Name_TextBox.Text = string.Empty;
+            }
+        }
+
+        private void Email_TextBox_Click(object sender, PointerRoutedEventArgs e)
+        {
+            int counter = 0;
+
+            if (counter == 0)
+            {
+                counter++;
+                Email_TextBox.Text = string.Empty;
+            }
+        }
+
+        private void Phone_TextBox_Click(object sender, PointerRoutedEventArgs e)
+        {
+            int counter = 0;
+
+            if (counter == 0)
+            {
+                counter++;
+                Phone_TextBox.Text = string.Empty;
+            }
+        }
+
+        private void UserName_TextBox_Click(object sender, PointerRoutedEventArgs e)
+        {
+            int counter = 0;
+
+            if (counter == 0)
+            {
+                counter++;
+                UserName_TextBox.Text = string.Empty;
+            }
+        }
+
+        private void Password_TextBox_Click(object sender, PointerRoutedEventArgs e)
+        {
+            int counter = 0;
+
+            if (counter == 0)
+            {
+                counter++;
+                Password_TextBox.Text = string.Empty;
+            }
+        }
+
+        private void Verify_TextBox_Click(object sender, PointerRoutedEventArgs e)
+        {
+            int counter = 0;
+
+            if (counter == 0)
+            {
+                counter++;
+                Verify_TextBox.Text = string.Empty;
+            }
+        }
+
+        private void Name_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Name_TextBox.Text))
+                Name_TextBox.Text = "Name";
+            fullname = Name_TextBox.Text;
+        }
+
+        private void Email_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Email_TextBox.Text))
+                Email_TextBox.Text = "Email";
+            email = Email_TextBox.Text;
+        }
+
+        private void Phone_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Phone_TextBox.Text))
+                Phone_TextBox.Text = "Phone Number";
+            phone = Phone_TextBox.Text;
+        }
+
+        private void UserName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(UserName_TextBox.Text))
+                UserName_TextBox.Text = "UserName";
+            username = UserName_TextBox.Text;
+        }
+
+        private void Password_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Password_TextBox.Text))
+                Password_TextBox.Text = "Password";
+        }
+
+        private void VerifyPassword_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Verify_TextBox.Text))
+                Verify_TextBox.Text = "Verify Password";
+        }
+
+        private bool PassValidate(string pass, string verify)
+        {
+            if (Password_TextBox.Text == Verify_TextBox.Text)
+            {
+                password = Password_TextBox.Text;
+                return true;
+            }
+            else
+                return false;
+
         }
     }
 }
