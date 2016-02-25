@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Cycle_Safe.LandingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cycle_Safe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="#FF45A860">
+            <TextBlock x:Name="Title" HorizontalAlignment="Center" Margin="108,10,107,0" TextWrapping="Wrap" Text="Howdy!" VerticalAlignment="Top" FontSize="66.667" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" Foreground="White" Height="75" Width="145" />
+
+            <Rectangle HorizontalAlignment="Left" Height="50" Margin="77,139,0,0" VerticalAlignment="Top" Width="234" Fill="#FF363636" />
+            <TextBlock x:Name="Register_Block" HorizontalAlignment="Center" Margin="98,139,48,0" TextWrapping="Wrap" Text="Search for best route" FontSize="35" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" VerticalAlignment="Top" Foreground="White" Width="214" />
+            <Button x:Name="Search_Button" Content=""  Margin="77,139,0,0" VerticalAlignment="Top" Height="50" Width="234" ClickMode="Press" Click="SearchBestRoute_onClick"/>
+
+            <Rectangle HorizontalAlignment="Left" Height="50" Margin="77,209,0,0" VerticalAlignment="Top" Width="234" Fill="#FF363636" />
+            <TextBlock x:Name="ShowReports_Block" HorizontalAlignment="Center" Margin="133,209,48,0" TextWrapping="Wrap" Text="Show Reports" FontSize="35" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" VerticalAlignment="Top" Foreground="White" Width="179" />
+            <Button x:Name="ShowReports_Button"  Content=""  Margin="77,209,0,0" VerticalAlignment="Top" Height="50" Width="234" ClickMode="Press" Click="ShowReports_onClick"/>
+
+            <Rectangle HorizontalAlignment="Left" Height="50" Margin="77,279,0,0" VerticalAlignment="Top" Width="234" Fill="#FF363636" />
+            <TextBlock x:Name="ReportCrime_Block" HorizontalAlignment="Center" Margin="133,279,48,0" TextWrapping="Wrap" Text="Report Crime" FontSize="35" FontFamily="/Assets/Fonts/AmaticSC-Bold.ttf#Amatic SC" VerticalAlignment="Top" Foreground="White" Width="179" />
+            <Button x:Name="ReportCrime_Button"  Content=""  Margin="77,279,0,0" VerticalAlignment="Top" Height="50" Width="234" ClickMode="Press" Click="ReportCrime_onClick"/>
+            <Image x:Name="image" HorizontalAlignment="Center" Height="130" Margin="67,458,42,0" VerticalAlignment="Top" Width="251" Source="Assets/Images/bike.png"/>
+        </Grid>
+
+    </Grid>
+</Page>

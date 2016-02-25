@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using static Cycle_Safe.Globalclass;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -23,7 +12,6 @@ namespace Cycle_Safe
     /// </summary>
     public sealed partial class Register : Page
     {
-
         public Register()
         {
             this.InitializeComponent();
@@ -31,7 +19,7 @@ namespace Cycle_Safe
 
         private void Name_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            if(Name_TextBox.Text == "Name")
+            if (Name_TextBox.Text == "Name")
                 Name_TextBox.Text = string.Empty;
         }
 
@@ -43,25 +31,25 @@ namespace Cycle_Safe
 
         private void Phone_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            if(Phone_TextBox.Text == "Phone Number")
+            if (Phone_TextBox.Text == "Phone Number")
                 Phone_TextBox.Text = string.Empty;
         }
 
         private void UserName_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            if(UserName_TextBox.Text == "Username")
+            if (UserName_TextBox.Text == "Username")
                 UserName_TextBox.Text = string.Empty;
         }
 
         private void Password_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            if(Password_TextBox.Text == "Password")
+            if (Password_TextBox.Text == "Password")
                 Password_TextBox.Text = string.Empty;
         }
 
         private void Verify_TextBox_Click(object sender, PointerRoutedEventArgs e)
         {
-            if(Verify_TextBox.Text == "Verify Password")
+            if (Verify_TextBox.Text == "Verify Password")
                 Verify_TextBox.Text = string.Empty;
         }
 
@@ -114,7 +102,6 @@ namespace Cycle_Safe
             }
             else
                 return false;
-
         }
     }
 }
